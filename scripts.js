@@ -34,3 +34,16 @@ const Tao = new Book('Tao Te Ching', 'Laozi', 88, true);
 const Gatsby = new Book('The Great Gatsby', 'F. Scott Fitzgerald', 180, true);
 const Catcher = new Book('The Catcher in the Rye', 'J.D. Salinger', 277, true);
 
+function newButton() {
+    document.getElementById('myForm').style.display = 'block';
+}
+
+
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }

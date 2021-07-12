@@ -10,8 +10,31 @@
 <body>
     <h1>LIBRARY</h1>
     <div style="text-align:center;">
-        <button type="button" id="new" class="btn">NEW BOOK</button>
-    </div>
+        <button type="button" id="new" class="btn" onclick="newButton()">NEW BOOK</button>
+
+
+
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>NEW BOOK</h1>
+            
+                <label for="title"><b>Title</b></label>
+                <input type="text" placeholder="Enter title" name="title" required>
+            
+                <label for="author"><b>Author</b></label>
+                <input type="text" placeholder="Enter author" name="author" required>
+
+                <label for="pages"><b>Pages</b></label>
+                <input type="number" placeholder="Enter number of pages" required>
+            
+                <button type="add" class="btn">Add</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+     </div>
+
+  
+
 
     <script charset="utf-8" src="scripts.js" ></script>
 </body>
